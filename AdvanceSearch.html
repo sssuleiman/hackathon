@@ -5,9 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdvanceSearch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/2180418238.js"></script>
 </head>
+<style>
+    input{
+    width:100%;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+}
+</style>
 <body>
-    <a href="index.html">Google Search</a>
-
+    <header>
+        <ul>
+            <li id="main"><a href="index.html">Go to main</a></li>
+            <li id="img"><img width="500px" src="imagegoogle.png" alt="image"></li>
+        </ul>
+    </header> 
+    <center>
+    <section>
+        <h2>Advance Search</h2>
+        <div class="container">
+            <form action="https://google.com/search" target="_blank">
+                <div class="header3">
+                    <h3>Find Pages with ...</h3>
+                </div>
+                <div class="label_item1">
+                    <label for="1" >all these words: </label>
+                </div>
+                <div class="input_item1">
+                    <input id="in" type=text name="">
+                </div>
+                <div class="label_item2">
+                    <label for="2" >this exact word or phrase: </label>
+                </div>
+                <div class="input_item2">
+                    <input id="in" type=text name="">
+                </div>
+                <div class="label_item3">
+                    <label for="3">any of these words: </label>
+                </div>
+                <div class="input_item3">
+                    <input id="in" type=text name="">
+                </div>
+                <div class="label_item4">
+                    <label for="4">none of these words:</label>
+                </div>
+                <div class="input_item4">
+                    <input id="in" type=text name="">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </section>   
+    </center>
 </body>
 </html>

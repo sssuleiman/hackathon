@@ -1,10 +1,25 @@
-header  ul {
+header  ul #img {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:100px;
+}
+header  ul #main{
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     padding: 0 15px;
+}
+header #img {
+    grid-column: 1 / 2; 
+}
+header #main {
+    grid-column: 2 / 3;
+    justify-self: end;
 }
 li {
     list-style-type: none;
@@ -44,4 +59,59 @@ a{
     border-radius: 30px;
     padding-left: 50px;
     margin: 30px 0;
+}
+.floats{
+    float: right;
+}
+#adv{
+    width: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.container form {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+        "h3 ."
+        "label1 input1"
+        "label2 input2"
+        "label3 input3"
+        "label4 input4"
+        ". button";
+    align-items: center;
+    justify-items: stretch;
+}
+label {
+    font-size: 14px;
+}
+.label_item1 { grid-area: label1;}
+.input_item1 { grid-area: input1;}
+.label_item2 { grid-area: label2;}
+.input_item2 { grid-area: input2;}
+.label_item3 { grid-area: label3;}
+.input_item3 { grid-area: input3;}
+.label_item4 { grid-area: label4;}
+.input_item4 { grid-area: input4;}
+.button {   
+    grid-area: button;  
+    justify-self: end;
+}
+section {
+    height: 75vh;
+    padding: 0 40px;
+}
+.button > input { 
+    color: #eee;
+    border: 1px solid #aaa;
+    line-height: 27px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #4d90fe;
+    width: 120px;
+    height: 30px;
 }
